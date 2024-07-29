@@ -1,0 +1,11 @@
+services:
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    environment:
+      POSTGRES_USER: dev_user
+      POSTGRES_PASSWORD: dev_pass
+      POSTGRES_DB: services
+    ports:
+      - "5432:5432"  # Map the container's port 5432 to host's port 5433

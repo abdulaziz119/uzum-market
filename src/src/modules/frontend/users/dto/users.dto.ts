@@ -34,6 +34,14 @@ export class UserCreateFrontendDto {
   language: string;
 }
 
+export class UserLoginFrontendDto {
+  @IsDefined()
+  email: string;
+
+  @IsOptional()
+  password: string;
+}
+
 // export class PaginationParams {
 //   @IsDefined()
 //   page: number;

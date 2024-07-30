@@ -17,5 +17,11 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false
-  }
+  },
+  "include": [
+    "src/**/*.ts"  // Sizning TypeScript fayllaringiz joylashgan papka
+  ],
+  "exclude": [
+    "node_modules" // Node.js modullarini chiqarib tashlaydi
+  ]
 }

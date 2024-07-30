@@ -12,7 +12,7 @@ async function bootstrap() {
   app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
 
-  await app.listen(3004);
+  await app.listen(3000);
 }
 
 bootstrap().then(() => 'connected');

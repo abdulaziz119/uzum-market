@@ -3,6 +3,6 @@ import { DatabaseModule } from '../database/database.module';
 import { FrontendModule } from './frontend/frontend.module';
 
 @Module({
-  imports: [DatabaseModule],
+  imports: [DatabaseModule, FrontendModule],
 })
 export class ModulesModule {}
